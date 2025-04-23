@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Visualização 3D - SketchUp</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #f4f4f4;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 20px;
+    }
+    h1 {
+      color: #333;
+      margin-bottom: 20px;
+    }
+    .iframe-container {
+      position: relative;
+      width: 100%;
+      max-width: 1000px;
+      padding-bottom: 56.25%; /* 16:9 aspect ratio */
+      height: 0;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+      border-radius: 10px;
+      overflow: hidden;
+      background-color: #fff;
+    }
+    .iframe-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+  </style>
+</head>
+<body>
+  <h1>Apresentação 3D do Projeto</h1>
+  <div class="iframe-container">
+    <iframe src="https://3dwarehouse.sketchup.com/embed/153fe5c3-2c61-411c-80bb-698364fdc666?token=p_pajw4nAlE=&binaryName=s21" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" width="580" height="326" allowfullscreen></iframe>
+  </div>
+</body>
+</html>

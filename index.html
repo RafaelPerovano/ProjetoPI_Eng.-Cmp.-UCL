@@ -1,50 +1,81 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Visualização 3D - SketchUp</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Apresentação 3D - grP2-d2</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <style>
     body {
-      margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background: #f4f4f4;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      min-height: 100vh;
-      padding: 20px;
+      background-color: #f8f9fa;
     }
-    h1 {
-      color: #333;
-      margin-bottom: 20px;
+
+    .container-custom {
+      padding-top: 60px;
+      padding-bottom: 40px;
     }
+
+    h1.title {
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: #0d6efd;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    h5.subtitle {
+      text-align: center;
+      font-weight: 500;
+      color: #6c757d;
+      margin-bottom: 30px;
+    }
+
+    ul.members {
+      list-style: none;
+      padding-left: 0;
+      text-align: center;
+      color: #212529;
+      margin-bottom: 40px;
+    }
+
+    ul.members li::before {
+      content: "👤 ";
+    }
+
     .iframe-container {
       position: relative;
       width: 100%;
-      max-width: 1000px;
-      padding-bottom: 56.25%; /* 16:9 aspect ratio */
+      padding-bottom: 56.25%;
       height: 0;
-      box-shadow: 0 8px 16px rgba(0,0,0,0.2);
-      border-radius: 10px;
+      border-radius: 12px;
       overflow: hidden;
-      background-color: #fff;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
     }
+
     .iframe-container iframe {
       position: absolute;
       top: 0;
       left: 0;
       width: 100%;
       height: 100%;
-      border: none;
+      border: 0;
     }
   </style>
 </head>
 <body>
-  <h1>Apresentação 3D do Projeto</h1>
-  <div class="iframe-container">
-    <iframe src="https://3dwarehouse.sketchup.com/embed/153fe5c3-2c61-411c-80bb-698364fdc666?token=p_pajw4nAlE=&binaryName=s21" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" width="580" height="326" allowfullscreen></iframe>
+  <div class="container container-custom">
+    <h1 class="title">Apresentação 3D do Projeto</h1>
+    <h5 class="subtitle">Grupo grP2-d2</h5>
+    <ul class="members">
+      <li>João Arthur</li>
+      <li>Keven Correa</li>
+      <li>Rafael Perovano</li>
+      <li>Ludwig Araujo</li>
+      <li>Lucas Reis</li>
+    </ul>
+    <div class="iframe-container">
+      <iframe src="https://3dwarehouse.sketchup.com/embed/153fe5c3-2c61-411c-80bb-698364fdc666?token=p_pajw4nAlE=&binaryName=s21" allowfullscreen></iframe>
+    </div>
   </div>
 </body>
 </html>
